@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        productsView = UIHostingController(rootView: AnyView(Products(productInfoCompletion: { id in
-
+        productsView = UIHostingController(rootView: AnyView(Products(productInfoCompletion: { productId in
+            // Use the productId passed to this closure to display your product info page
         }).environmentObject(appDelegate.storeHelper)))
         
         if let productsView {

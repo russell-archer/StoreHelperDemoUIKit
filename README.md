@@ -10,9 +10,7 @@
 `StoreHelper` is a Swift Package Manager (SPM) package that enables developers using Xcode 14/13 to easily add in-app purchase 
 support to **iOS 16/15** and **macOS 13/12** SwiftUI apps.
 
-**
-This repository contains an experimental proof-of-concept project showing how `StoreHelper` could be used in a UIKit application.
-**
+**This repository contains an experimental, proof-of-concept project showing how `StoreHelper` could be used in a UIKit application.**
 
 `StoreHelper` provides the following features:
 

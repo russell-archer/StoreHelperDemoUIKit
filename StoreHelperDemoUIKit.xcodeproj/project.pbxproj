@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6848F4AE2948A8B500B0F81E /* StoreHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 6848F4AD2948A8B500B0F81E /* StoreHelper */; };
+		6848F4B12948A8EB00B0F81E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6848F4B02948A8EB00B0F81E /* StoreKit.framework */; };
+		6848F4B42948AB3700B0F81E /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6848F4B32948AB3700B0F81E /* Configuration.plist */; };
+		6848F4B62948AB5100B0F81E /* Products.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6848F4B52948AB5100B0F81E /* Products.plist */; };
 		68BCF6A32948A62D00295C04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BCF6A22948A62D00295C04 /* AppDelegate.swift */; };
 		68BCF6A52948A62D00295C04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BCF6A42948A62D00295C04 /* SceneDelegate.swift */; };
 		68BCF6A72948A62D00295C04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BCF6A62948A62D00295C04 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6848F4B02948A8EB00B0F81E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		6848F4B22948AAE200B0F81E /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
+		6848F4B32948AB3700B0F81E /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		6848F4B52948AB5100B0F81E /* Products.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Products.plist; sourceTree = "<group>"; };
 		68BCF69F2948A62D00295C04 /* StoreHelperDemoUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreHelperDemoUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BCF6A22948A62D00295C04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68BCF6A42948A62D00295C04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6848F4AE2948A8B500B0F81E /* StoreHelper in Frameworks */,
+				6848F4B12948A8EB00B0F81E /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6848F4AF2948A8EB00B0F81E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6848F4B02948A8EB00B0F81E /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		68BCF6962948A62C00295C04 = {
 			isa = PBXGroup;
 			children = (
 				68BCF6A12948A62D00295C04 /* StoreHelperDemoUIKit */,
 				68BCF6A02948A62D00295C04 /* Products */,
+				6848F4AF2948A8EB00B0F81E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +75,16 @@
 		68BCF6A12948A62D00295C04 /* StoreHelperDemoUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				6848F4B32948AB3700B0F81E /* Configuration.plist */,
+				68BCF6B02948A62E00295C04 /* Info.plist */,
+				6848F4B52948AB5100B0F81E /* Products.plist */,
+				6848F4B22948AAE200B0F81E /* Products.storekit */,
 				68BCF6A22948A62D00295C04 /* AppDelegate.swift */,
 				68BCF6A42948A62D00295C04 /* SceneDelegate.swift */,
 				68BCF6A62948A62D00295C04 /* ViewController.swift */,
-				68BCF6A82948A62D00295C04 /* Main.storyboard */,
 				68BCF6AB2948A62E00295C04 /* Assets.xcassets */,
 				68BCF6AD2948A62E00295C04 /* LaunchScreen.storyboard */,
-				68BCF6B02948A62E00295C04 /* Info.plist */,
+				68BCF6A82948A62D00295C04 /* Main.storyboard */,
 			);
 			path = StoreHelperDemoUIKit;
 			sourceTree = "<group>";
@@ -83,6 +105,9 @@
 			dependencies = (
 			);
 			name = StoreHelperDemoUIKit;
+			packageProductDependencies = (
+				6848F4AD2948A8B500B0F81E /* StoreHelper */,
+			);
 			productName = StoreHelperDemoUIKit;
 			productReference = 68BCF69F2948A62D00295C04 /* StoreHelperDemoUIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +137,7 @@
 			);
 			mainGroup = 68BCF6962948A62C00295C04;
 			packageReferences = (
+				6848F4AC2948A8B500B0F81E /* XCRemoteSwiftPackageReference "StoreHelper" */,
 			);
 			productRefGroup = 68BCF6A02948A62D00295C04 /* Products */;
 			projectDirPath = "";
@@ -128,6 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				68BCF6AF2948A62E00295C04 /* LaunchScreen.storyboard in Resources */,
+				6848F4B62948AB5100B0F81E /* Products.plist in Resources */,
+				6848F4B42948AB3700B0F81E /* Configuration.plist in Resources */,
 				68BCF6AC2948A62E00295C04 /* Assets.xcassets in Resources */,
 				68BCF6AA2948A62D00295C04 /* Main.storyboard in Resources */,
 			);
@@ -360,6 +388,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6848F4AC2948A8B500B0F81E /* XCRemoteSwiftPackageReference "StoreHelper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/russell-archer/StoreHelper.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6848F4AD2948A8B500B0F81E /* StoreHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6848F4AC2948A8B500B0F81E /* XCRemoteSwiftPackageReference "StoreHelper" */;
+			productName = StoreHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 68BCF6972948A62C00295C04 /* Project object */;
 }
